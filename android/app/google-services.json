@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "259454668938",
+    "project_id": "dw7-job-timer-2022",
+    "storage_bucket": "dw7-job-timer-2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259454668938:android:592483d00b79410c831d73",
+        "android_client_info": {
+          "package_name": "br.com.JacksonECO.job_time"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259454668938-67ggbpopj69ukg4iljgn0s69j9h3clhq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.JacksonECO.job_time",
+            "certificate_hash": "cf5741b6f12a1e61c15a87123769d49d90a39bb6"
+          }
+        },
+        {
+          "client_id": "259454668938-hglo9n4f773ga2cesp7d0mf64j4j1ult.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIMQw0T44VVnqTHxpQexEeg6zGyWWuIFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259454668938-hglo9n4f773ga2cesp7d0mf64j4j1ult.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
