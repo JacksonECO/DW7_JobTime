@@ -11,9 +11,10 @@ class Project {
   int? id;
 
   late String name;
+  late int estimate;
 
   @ProjectStatusConverter()
   late ProjectStatus status;
 
-  final task = IsarLinks<ProjectTask>();
+  final tasks = IsarLinks<ProjectTask>();
 }
