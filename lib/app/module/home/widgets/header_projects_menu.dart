@@ -21,13 +21,16 @@ class HeaderProjectsMenu extends SliverPersistentHeaderDelegate {
               SizedBox(
                 width: constraints.maxWidth * 0.5,
                 child: DropdownButtonFormField<ProjectStatus>(
+                  value: ProjectStatus.em_andamento,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
                     contentPadding: const EdgeInsets.all(10),
                     isCollapsed: true,
                   ),
                   items: ProjectStatus.values.map((e) => DropdownMenuItem(value: e, child: Text(e.label))).toList(),
-                  onChanged: (value) {},
+                  onChanged: (status) {
+                    if (status != null) controller.filter(status);
+                  },
                 ),
               ),
               SizedBox(
