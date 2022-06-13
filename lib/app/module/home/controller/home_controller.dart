@@ -9,7 +9,7 @@ import 'package:job_time/app/view_models/project_model.dart';
 part 'home_status.dart';
 
 class HomeController extends Cubit<HomeState> {
-  ProjectService _projectService;
+  final ProjectService _projectService;
 
   HomeController({required ProjectService projectService})
       : _projectService = projectService,

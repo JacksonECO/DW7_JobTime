@@ -5,6 +5,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 
 import 'package:job_time/app/module/home/controller/home_controller.dart';
 import 'package:job_time/app/module/home/widgets/header_projects_menu.dart';
+import 'package:job_time/app/module/home/widgets/project_tile.dart';
 import 'package:job_time/app/services/auth/auth_service.dart';
 import 'package:job_time/app/view_models/project_model.dart';
 
@@ -18,6 +19,13 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //? Limpar banco de dados
+    // final Database d = Modular.get<Database>();
+    // d.openConnection().then((connection) {
+    //   Future.delayed(Duration(seconds: 5), () async {
+    //     await connection.writeTxn((isar) => isar.clear());
+    //   });
+    // });
     return BlocListener<HomeController, HomeState>(
       bloc: controller,
       listener: (context, state) {
@@ -68,10 +76,11 @@ class HomePage extends StatelessWidget {
                   return SliverList(
                     delegate: SliverChildListDelegate(
                       projects.map((project) {
-                        return ListTile(
-                          title: Text(project.name),
-                          subtitle: Text('${project.estimate}h'),
-                        );
+                        return ProjectTile(projectModel: project);
+                        // return ListTile(
+                        //   title: Text(project.name),
+                        //   subtitle: Text('${project.estimate}h'),
+                        // );
                       }).toList(),
                     ),
                   );
