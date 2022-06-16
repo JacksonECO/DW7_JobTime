@@ -16,7 +16,7 @@ class ProjectTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () async {
-        await Modular.to.pushNamed('/project/detail', arguments: projectModel);
+        await Modular.to.pushNamed('/project/detail/', arguments: projectModel);
         Modular.get<HomeController>().updateList();
       },
       child: Container(

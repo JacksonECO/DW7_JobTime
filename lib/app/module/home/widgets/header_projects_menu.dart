@@ -37,7 +37,7 @@ class HeaderProjectsMenu extends SliverPersistentHeaderDelegate {
                 width: constraints.maxWidth * 0.4,
                 child: ElevatedButton.icon(
                   onPressed: () async {
-                    await Modular.to.pushNamed('/project/register');
+                    await Modular.to.pushNamed('/project/register/');
                     controller.loadProjects();
                   },
                   icon: const Icon(Icons.add),
