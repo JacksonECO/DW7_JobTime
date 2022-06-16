@@ -1,6 +1,10 @@
-# job_time
+# Dart Week 7edº - Job Timer
 
-A new Flutter project.
+Aplicação completa em Flutter utilizando Bloc e Modular com o banco de dados local ISAR e login com o Google usando o Firebase.
+
+O projeto se trata de um gerenciador de tempo para projetos, nele é possível adicionar as atividades e o tempo gasto em cada uma delas assim como o tempo estimado para o projeto.
+
+ A prototipagem das telas estão no [Figma](https://www.figma.com/file/eJK6AHqHXEAurdkDmvPdF2/Job-Timer?node-id=0%3A1).
 
 ## Getting Started
 
